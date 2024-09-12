@@ -1,6 +1,7 @@
 # group_project_restaurant
 
-## github repo-link: (https://github.com/IdacJohansson/group_project_restaurant.git)
+## github repo-link: 
+(https://github.com/IdacJohansson/group_project_restaurant.git)
 
 
 ## Project requieries 
