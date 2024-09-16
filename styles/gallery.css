@@ -1,0 +1,57 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: "Poppins", system-ui;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 40px;
+text-align: center;
+  margin-top:50px;
+  margin-bottom: 50px;
+  
+}
+
+  .banner img {
+    width: 100%; /* Makes the image span across the full width of the screen */
+    height: 50%; /* Preserves the image's aspect ratio */
+    display: block; /* Removes any gaps below the image */
+    margin-bottom: 50px;
+  }
+  .banner {
+    width: 100%; 
+   max-width: 1400px;
+    overflow: hidden; 
+  }
+
+  h2{
+    font-family: "Poppins", system-ui;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  color: #3783ca;
+  font-size: 30px;
+  margin-left:70px;
+  
+}
+
+body, html {
+    height: 100%; 
+    margin: 0;
+    
+    text-align: center; 
+    
+  }
+  
+  .center-text h2 {
+    font-family: "Arial", sans-serif; /* Apply any font family you want */
+    line-height: 1.5em; /* Space between the lines */
+    padding: 10px; /* Optional padding */
+    font-size: 24px; /* Adjust the font size */
+  }
+  
+  
+  
