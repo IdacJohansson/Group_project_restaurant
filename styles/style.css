@@ -1,0 +1,163 @@
+/* Landing page - Ida */
+
+.navigation {
+    position: absolute;
+    top: 51px;
+    max-width: 1382px;
+    width: 100%;
+    height: 111px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid;
+    margin-bottom: 20px;
+  }
+  
+  .navigation-box {
+    position: absolute;
+    right: 213px;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+  }
+  
+  .logo-img {
+    position: absolute;
+    left: 80px;
+    max-width: 250px;
+    width: 100%;
+    height: 150px;
+  }
+  
+  .navigation-box li {
+    margin-right: 41px;
+  }
+  
+  .navigation-box li a {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24.38px;
+    color: #1a3954;
+  }
+  
+  .button-container {
+    position: absolute;
+    right: 45px;
+  }
+  
+  .contact-us-btn {
+    width: 140px;
+    height: 50px;
+    border-radius: 7px;
+    background-color: #3783ca;
+    color: white;
+    margin-left: 10px;
+    border: none;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .contact-us-btn:hover,
+  li a:hover {
+    opacity: 0.8;
+  }
+  
+  /* Welcom container */
+  
+  .welcome-container {
+    position: relative;
+    left: 82px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 90px;
+    max-width: 1440px;
+    width: 100%;
+    height: 889px;
+    top: 193px;
+  }
+  
+  .seafood-img {
+    max-width: 500px;
+    width: 100%;
+    min-height: 889px;
+    height: 100%;
+    grid-column: span 2 / span 2;
+    grid-row: span 9 / span 9;
+  }
+  
+  .general-food-img {
+    max-width: 657px;
+    width: 100%;
+    min-height: 438px;
+    height: 100%;
+    grid-column: span 3 / span 3;
+    grid-row: span 5 / span 5;
+    grid-column-start: 3;
+  }
+  
+  .welcome-heading-text-container {
+    max-width: 615px;
+    width: 100%;
+    min-height: 219px;
+    height: 100%;
+    border-bottom: #3783ca solid 4px;
+    border-top: #3783ca solid 4px;
+    grid-column: span 3 / span 3;
+    grid-row: span 4 / span 4;
+    grid-column-start: 3;
+    grid-row-start: 6;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    left: 21px;
+  }
+  
+  .welcome-main-heading {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    line-height: 63.54px;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+/* Contact us - Sannna */
+
+
+
+
+
+
+
+
+
+
+/* About us - Sanna */
+
+
+
+
+
+
+/* Gallery - Preeti */
