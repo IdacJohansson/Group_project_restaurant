@@ -1,3 +1,22 @@
+* {
+    color: #1A3954;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    background-color: #fffcf9;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+a:visited {
+    color: #3783CA;
+}
+button {
+    color: #F5F5F5;
+    background-color: #3783CA;
+}
 #head-line {
     display: flex;
     flex-direction: row;
@@ -28,14 +47,21 @@ h1 {
     max-width: 1163px;
     width: 100%;
     min-height: 303px;
+    margin: 132px 0 103px 0;
 }
 .contact, .opening-hours {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+   justify-content: space-around;
     max-width: 476px;
     width: 100%;
     min-height: 303px;
+}
+.contact, .opening-hours > p {
+    font-size: 20px;
+}
+.contact, .opening-hours > h6 {
+    font-size: 20px;
 }
 h5 {
     text-transform: uppercase;
@@ -49,12 +75,14 @@ form {
     max-width: 549px;
     width: 100%;
     min-height: 461px;
+    margin-bottom: 311px;
 }
 button, h2, h5 {
     align-self: center;
     font-size: 30px;
 }
 label {
+    margin: 30px 0 10px 0;
     font-size: 15px;
 }
 input {
@@ -71,12 +99,13 @@ button {
     font-size: 25px;
     border: solid 3px #1A3954;
     width: 237px;
-    height: 50px;
+    height: 70px;
+    margin-top: 30px;
 }
 button:hover {
     background-color: #1A3954;
 }
-button:focus {
+button:active {
     animation: submitActive 0.1s;
 }
 @keyframes submitActive {
