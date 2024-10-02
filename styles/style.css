@@ -1,3 +1,23 @@
+/* OVerall style*/
+* {
+  color: #1A3954;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  background-color: #fffcf9;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+a:visited {
+  color: #3783CA;
+}
+button {
+  color: #F5F5F5;
+  background-color: #3783CA;
+}
 /* Landing page - Ida */
 
 .navigation {
@@ -144,26 +164,7 @@
 
 /* Contact us - Sannna */
 
-* {
-  color: #1A3954;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  background-color: #fffcf9;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100vw;
-}
-a:visited {
-  color: #3783CA;
-}
-button {
-  color: #F5F5F5;
-  background-color: #3783CA;
-}
-#head-line {
+.head-line_contactUs {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -173,7 +174,7 @@ button {
   min-height: 44px;
 
 }
-h1 {
+.head-line_contactUs > h1 {
   font-size: 36px;
   text-align: center;
   margin: 0 -32px;
@@ -186,7 +187,7 @@ h1 {
   background-color: #3783CA;
 }
 
-#info {
+.info_contactUs {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -209,7 +210,7 @@ h1 {
 .contact, .opening-hours > h6 {
   font-size: 20px;
 }
-h5 {
+.contact > h5, .opening-hours > h5 {
   text-transform: uppercase;
 }
 
@@ -223,7 +224,7 @@ form {
   min-height: 461px;
   margin-bottom: 311px;
 }
-button, h2, h5 {
+form > button, form > h2, .contact > h5, .opening-hours > h5 {
   align-self: center;
   font-size: 30px;
 }
@@ -241,7 +242,7 @@ input {
   color: #D9D9D9;
   text-transform: uppercase;
 }
-button {
+ form > button {
   font-size: 25px;
   border: solid 3px #1A3954;
   width: 237px;
