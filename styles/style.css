@@ -1,163 +1,364 @@
 /* Landing page - Ida */
 
-.navigation {
-    position: absolute;
-    top: 51px;
-    max-width: 1382px;
-    width: 100%;
-    height: 111px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: black solid;
-    margin-bottom: 20px;
-  }
-  
-  .navigation-box {
-    position: absolute;
-    right: 213px;
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-  }
-  
-  .logo-img {
-    position: absolute;
-    left: 80px;
-    max-width: 250px;
-    width: 100%;
-    height: 150px;
-  }
-  
-  .navigation-box li {
-    margin-right: 41px;
-  }
-  
-  .navigation-box li a {
-    text-decoration: none;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 20px;
-    line-height: 24.38px;
-    color: #1a3954;
-  }
-  
-  .button-container {
-    position: absolute;
-    right: 45px;
-  }
-  
-  .contact-us-btn {
-    width: 140px;
-    height: 50px;
-    border-radius: 7px;
-    background-color: #3783ca;
-    color: white;
-    margin-left: 10px;
-    border: none;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
-    text-align: center;
-    margin: 0;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  .contact-us-btn:hover,
-  li a:hover {
-    opacity: 0.8;
-  }
-  
-  /* Welcom container */
-  
-  .welcome-container {
-    position: relative;
-    left: 82px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(9, 1fr);
-    gap: 90px;
-    max-width: 1440px;
-    width: 100%;
-    height: 889px;
-    top: 193px;
-  }
-  
-  .seafood-img {
-    max-width: 500px;
-    width: 100%;
-    min-height: 889px;
-    height: 100%;
-    grid-column: span 2 / span 2;
-    grid-row: span 9 / span 9;
-  }
-  
-  .general-food-img {
-    max-width: 657px;
-    width: 100%;
-    min-height: 438px;
-    height: 100%;
-    grid-column: span 3 / span 3;
-    grid-row: span 5 / span 5;
-    grid-column-start: 3;
-  }
-  
-  .welcome-heading-text-container {
-    max-width: 615px;
-    width: 100%;
-    min-height: 219px;
-    height: 100%;
-    border-bottom: #3783ca solid 4px;
-    border-top: #3783ca solid 4px;
-    grid-column: span 3 / span 3;
-    grid-row: span 4 / span 4;
-    grid-column-start: 3;
-    grid-row-start: 6;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    position: relative;
-    left: 21px;
-  }
-  
-  .welcome-main-heading {
-    font-family: "Young Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 45px;
-    line-height: 63.54px;
-    text-align: center;
-  }
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 10px;
+}
 
+.main {
+  display: flex;
+  max-width: 1382px;
+  height: 100%;
+  flex-direction: column;
+  gap: 80px;
+  background-color: #fffcf9;
+  border: #1a3954;
+}
 
+.nav {
+  max-width: 1382px;
+  width: 100%;
+  min-height: 111px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: #1a3954 solid 3px;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fffcf9;
+}
 
+.logo-img {
+  max-width: 250px;
+  width: 100%;
+  height: 150px;
+}
 
+.nav-menu-container {
+  max-width: 550px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-right: 10px;
+}
 
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  list-style-type: none;
+}
 
+.nav-li {
+  cursor: pointer;
+}
 
+.nav-link {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: #1a3954;
+}
 
+.contact-us-btn {
+  width: 140px;
+  height: 50px;
+  border-radius: 7px;
+  background-color: #3783ca;
+  color: white;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}
 
+/* first container */
+
+.welcome-grid-container {
+  position: relative;
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  gap: 90px;
+  max-width: 1440px;
+  width: 100%;
+  height: 889px;
+}
+
+/* Positions */
+
+.position-right-corner {
+  grid-column: span 3 / span 3;
+  grid-row: span 4 / span 4;
+  grid-column-start: 3;
+  grid-row-start: 7;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 21px;
+}
+
+.seafood-img {
+  max-width: 500px;
+  width: 100%;
+  min-height: 889px;
+  height: 100%;
+  grid-column: span 2 / span 2;
+  grid-row: span 9 / span 9;
+}
+
+.general-food-img {
+  max-width: 657px;
+  width: 100%;
+  min-height: 438px;
+  height: 100%;
+  grid-column: span 3 / span 3;
+  grid-row: span 5 / span 5;
+  grid-column-start: 3;
+}
+
+/* GENERAL */
+
+.heading-container {
+  max-width: 615px;
+  width: 100%;
+  min-height: 219px;
+  height: 10%;
+  border-bottom: #3783ca solid 4px;
+  border-top: #3783ca solid 4px;
+}
+
+.heading {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 45px;
+  line-height: 63.54px;
+  text-align: center;
+  margin: 0px;
+}
+
+.heading-link {
+  text-decoration: none;
+  color: #1a3954;
+}
+
+.summerized-text-container {
+  display: flex;
+  align-items: center;
+  max-width: 431px;
+  width: 100%;
+  min-height: 232px;
+  height: 100%;
+  border-bottom: #3783ca solid 4px;
+}
+
+.summerized-text {
+  padding: 10px;
+  font-size: 30px;
+  line-height: 35px;
+  font-family: "Young Serif", serif;
+  text-align: center;
+}
+
+.vertical-line {
+  grid-column: 3;
+  grid-row: 1 / span 6;
+  height: 900px;
+  width: 3px;
+  background-color: #3783ca;
+  justify-self: center;
+}
+
+.photo {
+  max-width: 434px;
+  width: 100%;
+  min-height: 386px;
+  height: 100%;
+  background-color: #d9d9d9;
+}
+
+.contact-us-btn:hover,
+.nav-li:hover,
+.sign-up-btn:hover,
+.footer-list:hover,
+.heading-link:hover {
+  opacity: 0.8;
+}
+
+/* second & third container */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 90px;
+  margin-top: 80px;
+}
+
+/* Positions */
+
+.position-top-left {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 40px;
+}
+
+.position-bottom-left {
+  position: relative;
+  left: 40px;
+  grid-column: span 2 / span 2;
+  grid-row: span 3 / span 3;
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+
+.position-middle-right {
+  grid-column: span 2 / span 2;
+  grid-row: span 4 / span 4;
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+
+.heading-container-small {
+  max-width: 431px;
+  width: 100%;
+  min-height: 119px;
+  height: 10%;
+  border-bottom: #3783ca solid 4px;
+  border-top: #3783ca solid 4px;
+}
+
+.position-middle-left {
+  grid-column: span 2 / span 2;
+  grid-row: span 4 / span 4;
+  grid-column-start: 1;
+  grid-row-start: 2;
+  position: relative;
+  left: 40px;
+}
+
+.position-top-right {
+  grid-column: span 2 / span 2;
+  grid-row: span 2 / span 2;
+  grid-column-start: 4;
+  grid-row-start: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.position-bottom-right {
+  position: relative;
+  grid-column: span 2 / span 2;
+  grid-row: span 3 / span 3;
+  grid-column-start: 4;
+  grid-row-start: 3;
+}
+
+/* Footer */
+
+.footer {
+  margin-top: 80px;
+  margin-bottom: 10px;
+  max-width: 1382px;
+  width: 100%;
+  min-height: 111px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #1a3954 solid 3px;
+}
+
+.footer-menu-container {
+  max-width: 1300px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  list-style-type: none;
+}
+
+.footer-li {
+  cursor: pointer;
+}
+
+.footer-link {
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 24.38px;
+  color: #1a3954;
+}
+
+.sign-up-btn {
+  width: 203px;
+  height: 70px;
+  background-color: #3783ca;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Menu - Ida */
+
+.book-table-btn {
+  width: 203px;
+  height: 70px;
+  background-color: #3783ca;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+}
 
 /* Contact us - Sannna */
 
-
-
-
-
-
-
-
-
-
 /* About us - Sanna */
-
-
-
-
-
 
 /* Gallery - Preeti */
