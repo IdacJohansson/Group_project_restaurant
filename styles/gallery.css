@@ -30,23 +30,191 @@ h2 {
   font-family: "Poppins", system-ui;
   font-weight: 700;
   font-style: normal;
-  font-size: 24px;
+  font-size: 30px;
   color: #3783ca;
   font-size: 30px;
   margin-left: 70px;
 }
 
-body,
-html {
-  height: 100%;
-  margin: 0;
+body, html {
+    height: 100%; 
+    margin: 0;
+    text-align: center; 
+    
+  }
+  
+  .center-text h2 {
+    font-family: "Arial", sans-serif; 
+    line-height: 1.5em; 
+    padding: 10px; 
+    font-size: 24px;
+  }
+  
 
-  text-align: center;
+
+nav{
+    display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  font-family: "Poppins", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 35px;
+ 
+  
+
+}
+/*.rest_images {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-evenly; 
 }
 
-.center-text h2 {
-  font-family: "Arial", sans-serif; /* Apply any font family you want */
-  line-height: 1.5em; /* Space between the lines */
-  padding: 10px; /* Optional padding */
-  font-size: 24px; /* Adjust the font size */
+.rest_images img {
+  width: 300px;
+  height: 200px;
+  margin: 10px; 
+}
+
+.rest_images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  justify-items: center; 
+  padding: 20px; 
+}
+
+.rest_images img {
+  width: 300px; 
+  height: 200px; 
+  object-fit: cover; 
+  border-radius: 10px; 
+}
+ img{
+  filter: brightness(50%);
+  transition: all 1s ease;
+}
+ img:hover {
+  filter: brightness(100%);
+  }
+  */
+
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px; 
+    justify-items: center; 
+    
+  }
+  .card-container .card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .card-container .card:hover {
+    transform: translateY(-10px); /* Slight upward motion */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .card {
+    width: 300px; 
+    text-align: center; 
+    overflow: hidden; 
+    padding-bottom: 5px; 
+    border: 1px solid  #9fc5e8;
+    box-shadow: #3783ca;
+  }
+  
+  .card img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+  }
+  
+  .card h3 {
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0; 
+    color:   #9fc5e8;
+    background-color:white
+
+
+
+
+
+  }
+  
+
+.footer-bar, .footer-bar-1{
+    list-style-type: none;
+}
+.footer-bar{
+
+    margin: 145px;
+}
+
+.fa-facebook,.fa-instagram,.fa-youtube,.fa-envelope,.fa-phone,.fa-mobile-screen-button,.fa-location-dot{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: white;
+    padding-top: 10px;
+    margin-top: 15px;
+}
+.fa-facebook{
+    color: blue;
+}
+.fa-facebook:hover{
+    transform: scale(1.2); 
+   
+  }
+.fa-youtube{
+    color: red;
+}
+.fa-youtube:hover{
+    transform: scale(1.2); 
+  
+  }
+.fa-instagram {
+    color: #E1306C; 
+    
+  }
+  .fa-instagram:hover{
+  transform: scale(1.2); 
+ 
+}
+.fa-envelope:hover,.fa-phone:hover,.fa-mobile-screen-button:hover,.fa-location-dot:hover{
+color: #3783ca;
+transform: scale(1.2);
+}
+
+  .footer img{ 
+    width: 250px;
+  }
+  
+.copywrite{
+    background-color: #9fc5e8 ;
+    width: 100%;
+    min-height: 50px;
+    padding: 15px;
+    font-size: 18px;
+    letter-spacing: 0.25px;
+    font-family: "Poppins", system-ui;
+    font-weight: 600;
+    font-style: normal;
 }
