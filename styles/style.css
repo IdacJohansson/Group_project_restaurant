@@ -1,42 +1,32 @@
 /* OVerall style*/
 * {
-  color: #1A3954;
+  color: #1a3954;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  background-color: #fffcf9;
 }
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100vw;
-}
+
 a:visited {
-  color: #3783CA;
+  color: #3783ca;
 }
-button {
-  color: #F5F5F5;
-  background-color: #3783CA;
-}
+
 /* Landing page - Ida */
 
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   min-height: 100vh;
-  margin: 10px;
+  height: auto;
+  margin: 0px;
 }
 
 .main {
   display: flex;
   max-width: 1382px;
-  height: 100%;
+  width: 100%;
   flex-direction: column;
-  gap: 80px;
+  gap: 70px;
   background-color: #fffcf9;
-  border: #1a3954;
 }
 
 .nav {
@@ -56,9 +46,9 @@ body {
 }
 
 .logo-img {
-  max-width: 250px;
+  max-width: 150px;
   width: 100%;
-  height: 150px;
+  height: 100px;
 }
 
 .nav-menu-container {
@@ -98,7 +88,6 @@ body {
   height: 50px;
   border-radius: 7px;
   background-color: #3783ca;
-  color: white;
   border: none;
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -107,6 +96,11 @@ body {
   text-align: center;
   font-size: 20px;
   cursor: pointer;
+}
+
+.contact-us-btn a {
+  color: white;
+  text-decoration: none;
 }
 
 /* first container */
@@ -123,7 +117,6 @@ body {
   height: 889px;
 }
 
-
 /* Positions */
 
 .position-right-corner {
@@ -135,6 +128,7 @@ body {
   align-items: center;
   position: relative;
   left: 21px;
+
 }
 .head-line_contactUs {
   display: flex;
@@ -265,13 +259,11 @@ button:active {
 }
 
 .heading {
-  font-family: "Young Serif", serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 45px;
   line-height: 63.54px;
   text-align: center;
   margin: 0px;
+  color: #3783ca;
 }
 
 .heading-link {
@@ -300,8 +292,8 @@ button:active {
 .vertical-line {
   grid-column: 3;
   grid-row: 1 / span 6;
-  height: 900px;
-  width: 3px;
+  height: 1000px;
+  width: 4px;
   background-color: #3783ca;
   justify-self: center;
 }
@@ -311,15 +303,22 @@ button:active {
   width: 100%;
   min-height: 386px;
   height: 100%;
-  background-color: #d9d9d9;
 }
 
 .contact-us-btn:hover,
 .nav-li:hover,
 .sign-up-btn:hover,
 .footer-list:hover,
-.heading-link:hover {
+.heading-link:hover,
+.icon-fb:hover,
+.icon-ig:hover {
   opacity: 0.8;
+}
+
+.seafood-img,
+.general-food-img,
+.photo {
+  box-shadow: 2px 2px 8px #a3a5a7;
 }
 
 /* second & third container */
@@ -327,7 +326,7 @@ button:active {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   gap: 90px;
   margin-top: 80px;
 }
@@ -402,31 +401,28 @@ button:active {
 /* Footer */
 
 .footer {
-  margin-top: 80px;
-  margin-bottom: 10px;
   max-width: 1382px;
   width: 100%;
+  margin-bottom: 10px;
+  margin-top: 50px;
   min-height: 111px;
-  height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   border: #1a3954 solid 3px;
 }
 
 .footer-menu-container {
-  max-width: 1300px;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  gap: 30px;
 }
 
 .footer-list {
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 50px;
   list-style-type: none;
 }
 
@@ -445,37 +441,131 @@ button:active {
   color: #1a3954;
 }
 
-.sign-up-btn {
-  width: 203px;
-  height: 70px;
-  background-color: #3783ca;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
-  text-align: center;
-  font-size: 20px;
-  cursor: pointer;
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: center;
+}
+
+.icon-ig,
+.icon-fb {
+  font-size: 40px;
+  color: #3783ca;
 }
 
 /* Menu - Ida */
 
-.book-table-btn {
-  width: 203px;
-  height: 70px;
-  background-color: #3783ca;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
+/* Contact us - Sannna */
+
+.head-line_contactUs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1313px;
+  width: 100%;
+  min-height: 44px;
+}
+.head-line_contactUs > h1 {
+  font-size: 36px;
   text-align: center;
-  font-size: 20px;
-  cursor: pointer;
+  margin: 0 -32px;
+}
+.blue-line {
+  max-width: 400px;
+  width: 100%;
+  height: 2px;
+  margin: 68px;
+  background-color: #3783ca;
 }
 
-/* Contact us - Sannna */
+.info_contactUs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 1163px;
+  width: 100%;
+  min-height: 303px;
+  margin: 132px 0 103px 0;
+}
+.contact,
+.opening-hours {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 476px;
+  width: 100%;
+  min-height: 303px;
+}
+.contact,
+.opening-hours > p {
+  font-size: 20px;
+}
+.contact,
+.opening-hours > h6 {
+  font-size: 20px;
+}
+.contact > h5,
+.opening-hours > h5 {
+  text-transform: uppercase;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-transform: uppercase;
+  max-width: 549px;
+  width: 100%;
+  min-height: 461px;
+  margin-bottom: 311px;
+}
+form > button,
+form > h2,
+.contact > h5,
+.opening-hours > h5 {
+  align-self: center;
+  font-size: 30px;
+}
+label {
+  margin: 30px 0 10px 0;
+  font-size: 15px;
+}
+input {
+  border: solid 4px #1a3954;
+  height: 78px;
+}
+:placeholder-shown {
+  padding-left: 4px;
+  font-size: 15px;
+  color: #d9d9d9;
+  text-transform: uppercase;
+}
+form > button {
+  font-size: 25px;
+  border: solid 3px #1a3954;
+  width: 237px;
+  height: 70px;
+  margin-top: 30px;
+}
+button:hover {
+  background-color: #1a3954;
+}
+button:active {
+  animation: submitActive 0.1s;
+}
+@keyframes submitActive {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 /* About us - Sanna */
 
