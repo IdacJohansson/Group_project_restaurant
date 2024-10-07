@@ -3,11 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="From our signature seafood dishes like grilled octopus and saffron-infused shrimp stew 
+               to our hearty lamb and chicken specialties, every meal is crafted with care and passion. 
+               Whether you're savoring a light mezze platter or indulging in a rich moussaka, our flavors 
+               transport you to sun-soaked shores and bustling markets."
+    />
+    <meta
+      property="og:description"
+      content="From our signature seafood dishes like grilled octopus and saffron-infused shrimp stew 
+               to our hearty lamb and chicken specialties, every meal is crafted with care and passion. 
+               Whether you're savoring a light mezze platter or indulging in a rich moussaka, our flavors 
+               transport you to sun-soaked shores and bustling markets."
+    />
+    <meta
+      property="twitter:description"
+      content="From our signature seafood dishes like grilled octopus and saffron-infused shrimp stew 
+               to our hearty lamb and chicken specialties, every meal is crafted with care and passion. 
+               Whether you're savoring a light mezze platter or indulging in a rich moussaka, our flavors 
+               transport you to sun-soaked shores and bustling markets."
+    />
+    <script
+      src="https://kit.fontawesome.com/fd79ca7455.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../styles/reset.css" />
     <link rel="stylesheet" href="/styles/style.css" />
-    <link rel="stylesheet" href="../styles/reset.css">
     <title>Menu</title>
   </head>
   <body>
+    <!-- Navigation -->
     <nav class="nav">
       <a href="/index.html"
         ><img class="logo-img" src="/images/logo.png" alt="logo" title="logo"
@@ -18,36 +44,43 @@
             <a class="nav-link" href="index.html">About Us</a>
           </li>
           <li class="nav-li">
-            <a class="nav-link" href="pages/gallery.html">Gallery</a>
+            <a class="nav-link" href="gallery.html">Gallery</a>
           </li>
           <li class="nav-li">
-            <a class="nav-link" href="pages/menu.html">Menu</a>
+            <a class="nav-link" href="/pages/menu.html">Menu</a>
           </li>
         </ul>
-        <button class="contact-us-btn">Contact Us</button>
+
+        <button class="contact-us-btn">
+          <a href="/pages/contactUs.html">Contact Us</a>
+        </button>
       </div>
     </nav>
     <main class="main">
-      <img class="menu-img" src="/images/reeef-menu.png" alt="our-menu" />
+      <div class="menu-heading-container">
+        <div class="horizontal-line"></div>
+        <h1 class="menu-heading">MENU</h1>
+        <div class="horizontal-line"></div>
+      </div>
+      <div class="menu-img-container">
+        <img class="menu-img" src="/images/reeef-menu.png" alt="our-menu" />
+      </div>
     </main>
 
     <footer class="footer">
       <div class="footer-menu-container">
         <ul class="footer-list">
           <li class="footer-li">
-            <a class="footer-link" href="index.html">AWARDS</a>
-          </li>
-          <li class="footer-li">
-            <a class="footer-link" href="pages/gallery.html">GIFT CARDS</a>
-          </li>
-          <li class="footer-li">
-            <a class="footer-link" href="index.html">CONTACT US</a>
-          </li>
-          <li class="footer-li">
-            <a class="footer-link" href="index.html">PRIVACY POLICY</a>
+            <a class="footer-link" href="/index.html">ABOUT US</a>
           </li>
         </ul>
-        <button class="sign-up-btn">EMAIL SIGN UP</button>
+        <div class="footer-icons">
+          <a href=""><i class="icon-ig fa-brands fa-instagram"></i></a>
+          <a href=""><i class="icon-fb fa-brands fa-facebook"></i></a>
+          <button class="contact-us-btn">
+            <a href="/pages/contactUs.html">Contact Us</a>
+          </button>
+        </div>
       </div>
     </footer>
   </body>
