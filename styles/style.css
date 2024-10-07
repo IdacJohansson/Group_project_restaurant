@@ -5,10 +5,6 @@
   font-weight: 600;
 }
 
-a:visited {
-  color: #3783ca;
-}
-
 /* Landing page - Ida */
 
 body {
@@ -34,6 +30,7 @@ body {
   width: 100%;
   min-height: 111px;
   height: 100%;
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -80,7 +77,7 @@ body {
   font-style: normal;
   font-size: 20px;
   line-height: 24.38px;
-  color: #1a3954;
+  color: #3783ca;
 }
 
 .contact-us-btn {
@@ -205,6 +202,12 @@ body {
   width: 100%;
   min-height: 386px;
   height: 100%;
+  cursor: pointer;
+}
+
+.photo:hover{
+  color: #a3a5a7;
+  opacity: 0.50;
 }
 
 .contact-us-btn:hover,
@@ -340,7 +343,7 @@ body {
   font-style: normal;
   font-size: 20px;
   line-height: 24.38px;
-  color: #1a3954;
+  color: #3783ca;
 }
 
 .footer-icons {
@@ -357,6 +360,40 @@ body {
 }
 
 /* Menu - Ida */
+
+.menu-heading-container {
+  max-width: 1382px;
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.horizontal-line {
+  width: 560px;
+  height: 4px;
+  background-color: #3783ca;
+}
+
+.menu-heading {
+  font-size: 36px;
+  text-align: center;
+}
+
+.menu-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-img {
+  max-width: 1000px;
+  width: 100%;
+  top: 50px;
+}
 
 /* Contact us - Sannna */
 
