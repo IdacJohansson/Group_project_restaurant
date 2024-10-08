@@ -51,10 +51,10 @@ body{
 
 
 .line-text-line .text {
-    margin: 10px 10px; /* Metin ile çizgiler arasındaki boşluk */
-    font-weight: 600; /* Metni kalın yapar */
-    font-size: 36px; /* Metnin boyutunu ayarlar */
-    white-space: wrap; /* Metnin taşmasını engeller */
+    margin: 10px 10px; 
+    font-weight: 600; 
+    font-size: 36px; 
+    white-space: wrap; 
     color: #1A3954;
 }
 
