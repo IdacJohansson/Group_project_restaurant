@@ -2,7 +2,16 @@
 * {
   color: #1a3954;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+}
+
+h1 {
+  font-weight: 900;
+  font-style: normal;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: #3783ca;
 }
 
 /* Landing page - Ida */
@@ -14,6 +23,7 @@ body {
   min-height: 100vh;
   height: auto;
   margin: 0px;
+  background-color: #fffcf9;
 }
 
 .main {
@@ -22,7 +32,6 @@ body {
   width: 100%;
   flex-direction: column;
   gap: 70px;
-  background-color: #fffcf9;
 }
 
 .nav {
@@ -125,104 +134,6 @@ body {
   align-items: center;
   position: relative;
   left: 21px;
-
-}
-.head-line_contactUs {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  max-width: 1313px;
-  width: 100%;
-  min-height: 44px;
-
-}
-.head-line_contactUs > h1 {
-  font-size: 36px;
-  text-align: center;
-  margin: 0 -32px;
-}
-.blue-line {
-  max-width: 400px;
-  width: 100%;
-  height: 2px;
-  margin: 68px;
-  background-color: #3783CA;
-}
-
-.info_contactUs {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  max-width: 1163px;
-  width: 100%;
-  min-height: 303px;
-  margin: 132px 0 103px 0;
-}
-.contact, .opening-hours {
-  display: flex;
-  flex-direction: column;
- justify-content: space-around;
-  max-width: 476px;
-  width: 100%;
-  min-height: 303px;
-}
-.contact, .opening-hours > p {
-  font-size: 20px;
-}
-.contact, .opening-hours > h6 {
-  font-size: 20px;
-}
-.contact > h5, .opening-hours > h5 {
-  text-transform: uppercase;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-transform: uppercase;
-  max-width: 549px;
-  width: 100%;
-  min-height: 461px;
-  margin-bottom: 311px;
-}
-form > button, form > h2, .contact > h5, .opening-hours > h5 {
-  align-self: center;
-  font-size: 30px;
-}
-label {
-  margin: 30px 0 10px 0;
-  font-size: 15px;
-}
-input {
-  border: solid 4px #1A3954;
-  height: 78px;
-}
-:placeholder-shown {
-  padding-left: 4px;
-  font-size: 15px;
-  color: #D9D9D9;
-  text-transform: uppercase;
-}
- form > button {
-  font-size: 25px;
-  border: solid 3px #1A3954;
-  width: 237px;
-  height: 70px;
-  margin-top: 30px;
-}
-button:hover {
-  background-color: #1A3954;
-}
-button:active {
-  animation: submitActive 0.1s;
-}
-@keyframes submitActive {
-  0% {transform: scale(1)}
-  50% {transform: scale(1.2)}
-  100% {transform: scale(1)}
-
 }
 
 .seafood-img {
@@ -260,7 +171,6 @@ button:active {
   line-height: 63.54px;
   text-align: center;
   margin: 0px;
-  color: #3783ca;
 }
 
 .heading-link {
@@ -296,16 +206,18 @@ button:active {
 }
 
 .photo {
-  max-width: 434px;
+  min-width: 434px;
   width: 100%;
-  min-height: 386px;
+  min-height: 400px;
   height: 100%;
   cursor: pointer;
 }
 
-.photo:hover{
-  color: #a3a5a7;
-  opacity: 0.50;
+.photo-restaurant {
+  min-width: 434px;
+  width: 100%;
+  min-height: 400px;
+  height: 100%;
 }
 
 .contact-us-btn:hover,
@@ -479,6 +391,8 @@ button:active {
 .menu-heading {
   font-size: 36px;
   text-align: center;
+  font-weight: 600;
+  color: #1a3954;
 }
 
 .menu-img-container {
@@ -503,11 +417,14 @@ button:active {
   max-width: 1313px;
   width: 100%;
   min-height: 44px;
+  margin-top: 50px;
 }
+
 .head-line_contactUs > h1 {
   font-size: 36px;
   text-align: center;
   margin: 0 -32px;
+  color: #1a3954;
 }
 .blue-line {
   max-width: 400px;
@@ -520,7 +437,7 @@ button:active {
 .info_contactUs {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 1163px;
   width: 100%;
   min-height: 303px;
@@ -530,7 +447,7 @@ button:active {
 .opening-hours {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 476px;
   width: 100%;
   min-height: 303px;
@@ -548,18 +465,18 @@ button:active {
   text-transform: uppercase;
 }
 
-form {
+.contact-form {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   text-transform: uppercase;
   max-width: 549px;
   width: 100%;
   min-height: 461px;
   margin-bottom: 311px;
 }
-form > button,
-form > h2,
+.contact-form > button,
+.contact-form > h2,
 .contact > h5,
 .opening-hours > h5 {
   align-self: center;
@@ -579,7 +496,7 @@ input {
   color: #d9d9d9;
   text-transform: uppercase;
 }
-form > button {
+.contact-form > button {
   font-size: 25px;
   border: solid 3px #1a3954;
   width: 237px;
@@ -604,6 +521,132 @@ button:active {
   }
 }
 
-/* About us - Sanna */
+/* About us - Neslihan */
+
+.about__us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  padding: 30px;
+  gap: 40px;
+}
+.about__us__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  max-width: 550px;
+}
+.about__us__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  max-width: 600px;
+  font-size: 22px;
+  line-height: 35px;
+}
+.line-text-line {
+  display: grid;
+  grid-template-columns: 2fr auto 2fr;
+  justify-content: center;
+  align-items: center;
+  margin: 90px 0;
+}
+
+.line-text-line .line1 {
+  height: 4px;
+  background-color: #3783ca;
+  width: 90%;
+  margin-left: 50px;
+}
+.line-text-line .line2 {
+  height: 4px;
+  background-color: #3783ca;
+  width: 90%;
+}
+
+.line-text-line .text {
+  margin: 10px 10px;
+  font-weight: 600;
+  font-size: 36px;
+  white-space: wrap;
+  color: #1a3954;
+}
 
 /* Gallery - Preeti */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.banner img {
+  width: 100%;
+  height: 50%;
+  display: block;
+  margin-bottom: 50px;
+}
+.banner {
+  width: 100%;
+  max-width: 1440px;
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+  margin: 0;
+  text-align: center;
+}
+
+.center-text h2 {
+  font-family: "Arial", sans-serif;
+  line-height: 1.5em;
+  padding: 10px;
+  font-size: 24px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+.card-container .card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-container .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+  width: 300px;
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 5px;
+  border: 2px solid #9fc5e8;
+  box-shadow: #3783ca;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #3783ca;
+  background-color: white;
+}
