@@ -1,50 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/contactUs.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Young+Serif&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fd79ca7455.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Contact Us</title>
-</head>
-<body>
-    <header></header>
-    <div id="head-line">
-        <div class="blue-line"></div>
-        <h1>CONTACT US</h1>
-        <div class="blue-line"></div>
+  </head>
+  <body>
+    <nav class="nav">
+      <a href="/index.html"
+        ><img class="logo-img" src="/images/logo.png" alt="logo" title="logo"
+      /></a>
+      <div class="nav-menu-container">
+        <ul class="nav-list">
+          <li class="nav-li">
+            <a class="nav-link" href="/pages/aboutUs.html">About Us</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-link" href="/pages/gallery.html">Gallery</a>
+          </li>
+          <li class="nav-li">
+            <a class="nav-link" href="/pages/menu.html">Menu</a>
+          </li>
+        </ul>
+
+        <button class="contact-us-btn">
+          <a href="/pages/contactUs.html">Contact Us</a>
+        </button>
+      </div>
+    </nav>
+
+    <div class="head-line_contactUs">
+      <div class="blue-line"></div>
+      <h1>CONTACT US</h1>
+      <div class="blue-line"></div>
     </div>
-    <div id="info">
-        <div class="contact">
-            <h5>- Contact -</h5>
-            <h6>Adress:</h6>
-            <p>Pearl Street 6 389 98 Seaside</p>
-            <h6>Email:</h6>
-            <p>info@reefapetite.com</p>
-            <h6>Phone:</h6>
-            <p>077 - 384 56 63</p>
-        </div>
-        <div class="opening-hours">
-            <h5>- Opening hours -</h5>
-            <p>Mon: Closed</p>
-            <p>Tue-Thur: 11:00-20:00</p>
-            <p>Fri-Sun: 11:00-23:00</p>
-        </div>
+    <div class="info_contactUs">
+      <div class="contact">
+        <h5>- Contact -</h5>
+        <h6>Adress:</h6>
+        <p>Pearl Street 6 389 98 Seaside</p>
+        <h6>Email:</h6>
+        <p>info@reefapetite.com</p>
+        <h6>Phone:</h6>
+        <p>077 - 384 56 63</p>
+      </div>
+      <div class="opening-hours">
+        <h5>- Opening hours -</h5>
+        <p>Mon: Closed</p>
+        <p>Tue-Thur: 11:00-20:00</p>
+        <p>Fri-Sun: 11:00-23:00</p>
+      </div>
     </div>
-    <form action="">
-        <h2>EMAIL SIGN UP</h2>
-        <label for="first-name">first name</label>
-        <input type="text" name="first-name" id="first-name" placeholder="first name" required>
-        <label for="last-name">last name</label>
-        <input type="text" name="last-name" id="last-name" placeholder="last name" required>
-        <label for="email">email</label>
-        <input type="email" name="email" id="email" placeholder="email" required>
-        <button>SUBMIT</button>
+    <form class="contact-form" action="">
+      <h2>EMAIL SIGN UP</h2>
+      <label for="first-name">first name</label>
+      <input
+        type="text"
+        name="first-name"
+        id="first-name"
+        placeholder="first name"
+        required
+      />
+      <label for="last-name">last name</label>
+      <input
+        type="text"
+        name="last-name"
+        id="last-name"
+        placeholder="last name"
+        required
+      />
+      <label for="email">email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="email"
+        required
+      />
+      <button>SUBMIT</button>
     </form>
-    <footer></footer>
-</body>
+    <footer class="footer">
+      <div class="footer-menu-container">
+        <ul class="footer-list">
+          <li class="footer-li">
+            <a class="footer-link" href="/pages/aboutUs.html">ABOUT US</a>
+          </li>
+        </ul>
+        <div class="footer-icons">
+          <a href=""><i class="icon-ig fa-brands fa-instagram"></i></a>
+          <a href=""><i class="icon-fb fa-brands fa-facebook"></i></a>
+          <button class="contact-us-btn">
+            <a href="/pages/contactUs.html">Contact Us</a>
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
